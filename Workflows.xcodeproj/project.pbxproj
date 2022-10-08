@@ -14,6 +14,10 @@
 		AE3FE4A928F0A7F70025A873 /* WorkflowsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3FE4A828F0A7F70025A873 /* WorkflowsTests.swift */; };
 		AE3FE4B328F0A7F70025A873 /* WorkflowsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3FE4B228F0A7F70025A873 /* WorkflowsUITests.swift */; };
 		AE3FE4B528F0A7F70025A873 /* WorkflowsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3FE4B428F0A7F70025A873 /* WorkflowsUITestsLaunchTests.swift */; };
+		AEE187FF28F2024F0039FBCD /* WorkflowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE187FE28F2024F0039FBCD /* WorkflowView.swift */; };
+		AEE1880228F203070039FBCD /* WorkflowsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE1880128F203070039FBCD /* WorkflowsViewModel.swift */; };
+		AEE1880528F203540039FBCD /* Workflow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE1880428F203540039FBCD /* Workflow.swift */; };
+		AEE1880728F203840039FBCD /* WorkflowItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE1880628F203840039FBCD /* WorkflowItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		AE3FE4AE28F0A7F70025A873 /* WorkflowsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkflowsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE3FE4B228F0A7F70025A873 /* WorkflowsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkflowsUITests.swift; sourceTree = "<group>"; };
 		AE3FE4B428F0A7F70025A873 /* WorkflowsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkflowsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AEE187FE28F2024F0039FBCD /* WorkflowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkflowView.swift; sourceTree = "<group>"; };
+		AEE1880128F203070039FBCD /* WorkflowsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkflowsViewModel.swift; sourceTree = "<group>"; };
+		AEE1880428F203540039FBCD /* Workflow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workflow.swift; sourceTree = "<group>"; };
+		AEE1880628F203840039FBCD /* WorkflowItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkflowItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +103,13 @@
 		AE3FE49528F0A7F50025A873 /* Workflows */ = {
 			isa = PBXGroup;
 			children = (
+				AEE1880328F203430039FBCD /* Models */,
+				AEE1880028F202D20039FBCD /* ViewModels */,
+				AEE187FD28F201DA0039FBCD /* Views */,
 				AE3FE49628F0A7F50025A873 /* WorkflowsApp.swift */,
 				AE3FE49A28F0A7F70025A873 /* Assets.xcassets */,
 				AE3FE49F28F0A7F70025A873 /* Workflows.entitlements */,
 				AE3FE49C28F0A7F70025A873 /* Preview Content */,
-				AE2E3ABF28F0EFCA00B288A6 /* WorkflowsView.swift */,
 			);
 			path = Workflows;
 			sourceTree = "<group>";
@@ -127,6 +137,32 @@
 				AE3FE4B428F0A7F70025A873 /* WorkflowsUITestsLaunchTests.swift */,
 			);
 			path = WorkflowsUITests;
+			sourceTree = "<group>";
+		};
+		AEE187FD28F201DA0039FBCD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AE2E3ABF28F0EFCA00B288A6 /* WorkflowsView.swift */,
+				AEE187FE28F2024F0039FBCD /* WorkflowView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AEE1880028F202D20039FBCD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AEE1880128F203070039FBCD /* WorkflowsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AEE1880328F203430039FBCD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AEE1880428F203540039FBCD /* Workflow.swift */,
+				AEE1880628F203840039FBCD /* WorkflowItem.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +296,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE2E3AC028F0EFCA00B288A6 /* WorkflowsView.swift in Sources */,
+				AEE1880228F203070039FBCD /* WorkflowsViewModel.swift in Sources */,
+				AEE187FF28F2024F0039FBCD /* WorkflowView.swift in Sources */,
+				AEE1880728F203840039FBCD /* WorkflowItem.swift in Sources */,
 				AE3FE49728F0A7F50025A873 /* WorkflowsApp.swift in Sources */,
+				AEE1880528F203540039FBCD /* Workflow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
