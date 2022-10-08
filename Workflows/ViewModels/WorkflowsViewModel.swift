@@ -40,12 +40,17 @@ class WorkflowsViewModel: ObservableObject {
         updateSavedWorkflows()
     }
     
+    func deleteWorkflow(workflow: Workflow) {
+        if let index = workflows.firstIndex(where: { $0.id == workflow.id }) {
+            workflows.remove(at: index)
+            updateSavedWorkflows()
+        }
+    }
+    
     func createNewWorkflowUrl(workflow: Workflow) {
         let newWorkflowItem = WorkflowItem()
-        
         focusedField = .id(id: newWorkflowItem.id)
         workflow.addWorkflowItem(item: newWorkflowItem)
-        
         updateSavedWorkflows()
     }
     
@@ -63,7 +68,6 @@ class WorkflowsViewModel: ObservableObject {
             let results = dialog.urls
             
             for result in results {
-                // file:///System/Applications/Calculator.app/
                 let newWorkflowItem = WorkflowItem(value: result.absoluteString)
                 workflow.addWorkflowItem(item: newWorkflowItem)
                 updateSavedWorkflows()

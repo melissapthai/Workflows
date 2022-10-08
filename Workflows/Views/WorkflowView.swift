@@ -34,8 +34,12 @@ struct WorkflowView: View {
                 
                 Button("+ Application", action: { workflowsViewModel.createNewWorkflowApp(workflow: workflow) })
             }
-
-            Button("Launch Workflow", action: workflow.launchWorkflow)
+            
+            HStack {
+                Button("Launch Workflow", action: workflow.launchWorkflow)
+                
+                Button("Delete Workflow", action: { workflowsViewModel.deleteWorkflow(workflow: workflow) })
+            }
         }
         .onChange(of: focusedField) { workflowsViewModel.focusedField = $0 }
         .onChange(of: workflowsViewModel.focusedField) { focusedField = $0 }
