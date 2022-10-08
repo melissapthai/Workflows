@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE2E3AC028F0EFCA00B288A6 /* WorkflowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2E3ABF28F0EFCA00B288A6 /* WorkflowsView.swift */; };
 		AE3FE49728F0A7F50025A873 /* WorkflowsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3FE49628F0A7F50025A873 /* WorkflowsApp.swift */; };
-		AE3FE49928F0A7F50025A873 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3FE49828F0A7F50025A873 /* ContentView.swift */; };
 		AE3FE49B28F0A7F70025A873 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE3FE49A28F0A7F70025A873 /* Assets.xcassets */; };
 		AE3FE49E28F0A7F70025A873 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE3FE49D28F0A7F70025A873 /* Preview Assets.xcassets */; };
 		AE3FE4A928F0A7F70025A873 /* WorkflowsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3FE4A828F0A7F70025A873 /* WorkflowsTests.swift */; };
@@ -34,9 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE2E3ABF28F0EFCA00B288A6 /* WorkflowsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkflowsView.swift; sourceTree = "<group>"; };
 		AE3FE49328F0A7F50025A873 /* Workflows.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Workflows.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE3FE49628F0A7F50025A873 /* WorkflowsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkflowsApp.swift; sourceTree = "<group>"; };
-		AE3FE49828F0A7F50025A873 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AE3FE49A28F0A7F70025A873 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE3FE49D28F0A7F70025A873 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AE3FE49F28F0A7F70025A873 /* Workflows.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Workflows.entitlements; sourceTree = "<group>"; };
@@ -96,10 +96,10 @@
 			isa = PBXGroup;
 			children = (
 				AE3FE49628F0A7F50025A873 /* WorkflowsApp.swift */,
-				AE3FE49828F0A7F50025A873 /* ContentView.swift */,
 				AE3FE49A28F0A7F70025A873 /* Assets.xcassets */,
 				AE3FE49F28F0A7F70025A873 /* Workflows.entitlements */,
 				AE3FE49C28F0A7F70025A873 /* Preview Content */,
+				AE2E3ABF28F0EFCA00B288A6 /* WorkflowsView.swift */,
 			);
 			path = Workflows;
 			sourceTree = "<group>";
@@ -259,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE3FE49928F0A7F50025A873 /* ContentView.swift in Sources */,
+				AE2E3AC028F0EFCA00B288A6 /* WorkflowsView.swift in Sources */,
 				AE3FE49728F0A7F50025A873 /* WorkflowsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +424,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -451,6 +452,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

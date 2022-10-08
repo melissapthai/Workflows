@@ -11,7 +11,7 @@ import SwiftUI
 struct WorkflowsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WorkflowsView()
         }
     }
 }
