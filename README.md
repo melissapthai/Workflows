@@ -1,5 +1,11 @@
 # Workflows
 
+
+
+https://user-images.githubusercontent.com/3220734/196598619-dd906da1-8137-429e-819a-4ae10092ba0f.mp4
+
+
+
 Launch all the Mac apps and websites you use on a daily basis with one click.
 
 Workflows is a Mac app that lets you create custom workflows for school, work, social, and other contexts. Save time from opening the same applications over and over again, and launch them with a single click with Workflows.
@@ -23,5 +29,5 @@ I plan on contributing more to this project over time as I learn more bits and p
 ## How to Use
 1. Create a new Workflow by clicking on "Create New Workflow."
 2. Add links to your Workflow by clicking "+ URL" and typing in the url. URLs must include the appropriate `http://` or `https://` prefix.
-3. App apps to your Workflow by clicking "+ Application" and selecting an app from the diaglog. You can select multiple apps at once by holding the Command (Cmd ⌘) key and clicking the apps you'd like to add to your Workflow.
+3. Add Mac applications to your Workflow by clicking "+ Application" and selecting an app from the diaglog. You can select multiple apps at once by holding the Command (Cmd ⌘) key and clicking the apps you'd like to add to your Workflow.
 4. Launch your Workflow by clicking "Launch Workflow".
